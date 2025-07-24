@@ -6,10 +6,10 @@ import { AssetLoader } from '../utils/AssetLoader';
 import {Spine} from "pixi-spine";
 
 const REEL_COUNT = 4;
-const SYMBOLS_PER_REEL = 6;
+const SYMBOLS_PER_REEL = 5;
 const SYMBOL_SIZE = 150;
 const REEL_HEIGHT = SYMBOL_SIZE;
-const REEL_SPACING = 10;
+const REEL_SPACING = 25;
 
 export class SlotMachine {
     public container: PIXI.Container;
@@ -43,8 +43,8 @@ export class SlotMachine {
             background.drawRect(
                 -20,
                 -20,
-                SYMBOL_SIZE * SYMBOLS_PER_REEL + 40, // Width now based on symbols per reel
-                REEL_HEIGHT * REEL_COUNT + REEL_SPACING * (REEL_COUNT - 1) + 40 // Height based on reel count
+                SYMBOL_SIZE * SYMBOLS_PER_REEL + 80, // Width now based on symbols per reel
+                REEL_HEIGHT * REEL_COUNT + REEL_SPACING * (REEL_COUNT - 1) + 50 // Height based on reel count
             );
             background.endFill();
             this.container.addChild(background);
