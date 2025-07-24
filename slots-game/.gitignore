@@ -10,3 +10,10 @@ yarn-error.log*
 
 .vscode/*
 /.idea/
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
