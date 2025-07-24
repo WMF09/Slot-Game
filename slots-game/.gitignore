@@ -11,6 +11,8 @@ yarn-error.log*
 .vscode/*
 /.idea/
 
+/after-clicks.png/
+
 # Playwright
 node_modules/
 /test-results/
